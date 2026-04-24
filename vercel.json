@@ -2,6 +2,14 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
+      "source": "/favicon.ico",
+      "destination": "https://cloud.uibakery.io/favicon.ico"
+    },
+    {
+      "source": "/:file((?:.*)\\.(?:js|css|png|jpg|jpeg|gif|svg|webp|ico|woff|woff2|ttf|eot|map))",
+      "destination": "https://cloud.uibakery.io/:file"
+    },
+    {
       "source": "/",
       "destination": "https://cloud.uibakery.io/share/OSjmPVZV0G"
     },
