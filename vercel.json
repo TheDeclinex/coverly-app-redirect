@@ -1,14 +1,18 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "rewrites": [
+  "redirects": [
     {
       "source": "/auth/login",
-      "destination": "https://cloud.uibakery.io/share/OSjmPVZV0G/login"
+      "destination": "/login",
+      "permanent": false
     },
     {
       "source": "/auth/callback",
-      "destination": "https://cloud.uibakery.io/share/OSjmPVZV0G/callback"
-    },
+      "destination": "/callback",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
     {
       "source": "/favicon.ico",
       "destination": "https://cloud.uibakery.io/favicon.ico"
