@@ -1,9 +1,13 @@
 {
-  "redirects": [
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
     {
       "source": "/",
-      "destination": "https://cloud.uibakery.io/share/OSjmPVZV0G",
-      "permanent": true
+      "destination": "https://cloud.uibakery.io/share/OSjmPVZV0G"
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://cloud.uibakery.io/share/OSjmPVZV0G/:path*"
     }
   ]
 }
